@@ -6,3 +6,7 @@ from app_package import app
 @app.route("/home")
 def home_page():
     return render_template("home_page.html")
+
+@app.route("/dashboard")
+def dashboard():
+    return render_template("dashboard.html")

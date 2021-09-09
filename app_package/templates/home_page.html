@@ -4,6 +4,42 @@ Home Page
 {% endblock %}
 
 
-{% block content %}    
-  <h2>This is our content for the home page</h2>
+
+{% block content %}
+<body class="text-center">
+<div class="container">
+    <form method="POST" class ="form-register" style='color:white'} >
+        {{ form.hidden_tag() }}
+          
+          <h1 class="h3 mb-3 font-weight-normal">
+                Enter Information Required
+            </h1>
+        <br>
+
+        {{ form.price.label() }}
+        {{ form.price(class="form-control",placeholder="Price" ) }}
+        
+        {{ form.supermarket_type1.label() }}
+        {{ form.supermarket_type1(class="form-control",placeholder="Give 1 for Yes, 0 for No" ) }}
+        
+        {{ form.supermarket_type2.label() }}
+        {{ form.supermarket_type2(class="form-control",placeholder="Give 1 for Yes, 0 for No" ) }}
+        
+        {{ form.supermarket_type3.label() }}
+        {{ form.supermarket_type3(class="form-control",placeholder="Give 1 for Yes, 0 for No" ) }}
+
+        {{ form.location_type_tier2.label() }}
+        {{ form.location_type_tier2(class="form-control",placeholder="Give 1 for Yes, 0 for No" ) }}
+
+        {{ form.fat_regular.label() }}
+        {{ form.fat_regular(class="form-control",placeholder="Give 1 for Yes, 0 for No" ) }}
+
+        {{ form.visibility.label() }}
+        {{ form.visibility(class="form-control",placeholder="Visibility%" ) }}
+
+        <br>
+        {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+    </form>
+</div>
+</body>
 {% endblock %}

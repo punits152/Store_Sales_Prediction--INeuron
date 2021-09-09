@@ -4,4 +4,4 @@ Data is available at the store and item level. A predictive model is to be prepa
 ## Data Description
 
 ## Architecture
-![](info/Architecture.jpeg "Architecture")
+![](info/Architecture.jpg "Architecture")
